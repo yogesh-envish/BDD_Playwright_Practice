@@ -11,8 +11,8 @@ import { defineBddConfig } from 'playwright-bdd';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 const testDir = defineBddConfig({
-  paths: ['sample.feature'],
-  require: ['steps.js'],
+  paths: ['tests/feature/ecomlogin.feature'],
+  require: ['tests/Stepdefinition/ecomloginstep.js'],
   });
 
 /**
@@ -46,15 +46,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {
