@@ -11,9 +11,9 @@ import { defineBddConfig } from 'playwright-bdd';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 const testDir = defineBddConfig({
-  paths: ['tests/feature/ecomlogin.feature'],
-  require: ['tests/Stepdefinition/ecomloginstep.js'],
-  });
+  paths: ['tests/feature/**/*.feature'],
+  require: ['tests/Stepdefinition/**/*.js'],
+});
 
 /**
  * @see https://playwright.dev/docs/test-configuration

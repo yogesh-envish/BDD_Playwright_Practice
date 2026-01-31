@@ -5,7 +5,7 @@ test.describe('Verify login', () => {
 
   test('Verify user is able to login with valid credentials', async ({ Given, page, And, When, Then }) => { 
     await Given('I navigate to "https://ecommerce-playground.lambdatest.io/"', null, { page }); 
-    await And('I click on My account'); 
+    await And('I click on Login option'); 
     await And('I enter E-Mail Address "pranav@testroverautomation.com"'); 
     await And('I enter password "Test1234"'); 
     await When('I click on submit button'); 
